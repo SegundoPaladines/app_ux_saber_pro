@@ -1,23 +1,24 @@
 import { Container, Grid} from '@mui/material';
 import { TitleComponent } from '../../components/titulo';
 import React from "react";
+import { PersonDataComponent } from '../../components/datos_persona';
 
 export const ResgisterScorePage: React.FC<{}> = () =>{
   return (
       <Container 
-      maxWidth="xl"
-      sx={{
-        mt:12,
-      }}
+        maxWidth="xl"
+        sx={{
+          mt:12
+        }}
     >
       <Grid
         container
-        direction="row"
+        direction="column"
         alignItems="center"
         justifyContent="center"
-        gap={2}
+        gap={4}
         sx={{
-          minWidth: "90hv"
+          minWidth: "100hv"
         }}
       >
         <Grid item xs={12}>
@@ -27,6 +28,22 @@ export const ResgisterScorePage: React.FC<{}> = () =>{
             divider
             dividerColor="green"
           />
+        </Grid>
+        <Grid item 
+          xs={12}
+        >
+          <PersonDataComponent
+            title="Puntaje Global"
+            name="Samuel Hernandez"
+            profesion="Ingeniero de Sistemas"
+            score={400}
+            img="https://pbs.twimg.com/profile_images/1066477945076752384/6cgqAOkb_400x400.jpg"
+          />
+        </Grid>
+        <Grid item 
+          xs={12}
+        >
+          Hola
         </Grid>
       </Grid>
     </Container>
