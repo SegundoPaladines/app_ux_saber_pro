@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/app_ux_saber_pro/static/css/main.9a9f7a4d.css",
-    "main.js": "/app_ux_saber_pro/static/js/main.f98e5230.js",
+    "main.css": "/app_ux_saber_pro/static/css/main.9fe3f113.css",
+    "main.js": "/app_ux_saber_pro/static/js/main.9437ea9a.js",
     "static/js/787.e6ac5a42.chunk.js": "/app_ux_saber_pro/static/js/787.e6ac5a42.chunk.js",
     "index.html": "/app_ux_saber_pro/index.html",
-    "main.9a9f7a4d.css.map": "/app_ux_saber_pro/static/css/main.9a9f7a4d.css.map",
-    "main.f98e5230.js.map": "/app_ux_saber_pro/static/js/main.f98e5230.js.map",
+    "main.9fe3f113.css.map": "/app_ux_saber_pro/static/css/main.9fe3f113.css.map",
+    "main.9437ea9a.js.map": "/app_ux_saber_pro/static/js/main.9437ea9a.js.map",
     "787.e6ac5a42.chunk.js.map": "/app_ux_saber_pro/static/js/787.e6ac5a42.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.9a9f7a4d.css",
-    "static/js/main.f98e5230.js"
+    "static/css/main.9fe3f113.css",
+    "static/js/main.9437ea9a.js"
   ]
 }
