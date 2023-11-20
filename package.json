@@ -2,7 +2,7 @@
   "name": "app_ux_saber_pro",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://segundopaladines.github.io/app_ux_saber_pro",
+  "homepage": "https://segundopaladines.github.io/app_ux_saber_pro/",
   "dependencies": {
     "@emotion/react": "^11.11.1",
     "@emotion/styled": "^11.11.0",
