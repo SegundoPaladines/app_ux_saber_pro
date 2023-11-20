@@ -1,11 +1,18 @@
 import { Container, Grid} from '@mui/material';
 import { TitleComponent } from '../../components/titulo';
-import React from "react";
+import React, { useState } from "react";
 import { PersonDataComponent } from '../../components/datos_persona';
 import { ScoreForm } from '../../components/formulario_puntaje';
 
 
 export const ResgisterScorePage: React.FC<{}> = () =>{
+
+  const [score, setScore] = useState<number>(0);
+
+  const handleScore = (newScore: number) =>{
+    setScore(newScore);
+  }
+
   return (
       <Container 
         maxWidth="xl"
@@ -38,14 +45,16 @@ export const ResgisterScorePage: React.FC<{}> = () =>{
             title="Puntaje Global"
             name="Samuel Hernandez"
             profesion="Ingeniero de Sistemas"
-            score={400}
+            score={score}
             img="https://pbs.twimg.com/profile_images/1066477945076752384/6cgqAOkb_400x400.jpg"
           />
         </Grid>
         <Grid item 
           xs={12}
         >
-          <ScoreForm />
+          <ScoreForm 
+            onSocreChangue={handleScore}
+          />
         </Grid>
       </Grid>
     </Container>
