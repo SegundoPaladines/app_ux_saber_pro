@@ -4,6 +4,7 @@ import { TitleComponent } from './components/titulo';
 import React, { useState } from "react";
 import { PersonDataComponent } from './components/datos_persona';
 import { ScoreForm } from './components/formulario_puntaje';
+import { RouterLayaut } from './common/router_layaut';
 
 function App() {
 
@@ -14,50 +15,53 @@ function App() {
   }
   
   return (
-    <Container 
-      maxWidth="xl"
-      sx={{
-        mt:12
-      }}
-    >
-      <Grid
-        container
-        direction="column"
-        alignItems="center"
-        justifyContent="center"
-        gap={4}
+    <div>
+      <RouterLayaut />
+      <Container 
+        maxWidth="xl"
         sx={{
-          minWidth: "100hv"
+          mt:12
         }}
       >
-        <Grid item xs={12}>
-          <TitleComponent 
-            title="Registrar Resultados Pruebas Saber Pro"
-            color="white"
-            divider
-            dividerColor="green"
-          />
-        </Grid>
-        <Grid item 
-          xs={12}
+        <Grid
+          container
+          direction="column"
+          alignItems="center"
+          justifyContent="center"
+          gap={4}
+          sx={{
+            minWidth: "100hv"
+          }}
         >
-          <PersonDataComponent
-            title="Puntaje Global"
-            name="Samuel Hernandez"
-            profesion="Ingeniero de Sistemas"
-            score={score}
-            img="https://pbs.twimg.com/profile_images/1066477945076752384/6cgqAOkb_400x400.jpg"
-          />
+          <Grid item xs={12}>
+            <TitleComponent 
+              title="Registrar Resultados Pruebas Saber Pro"
+              color="white"
+              divider
+              dividerColor="green"
+            />
+          </Grid>
+          <Grid item 
+            xs={12}
+          >
+            <PersonDataComponent
+              title="Puntaje Global"
+              name="Samuel Hernandez"
+              profesion="Ingeniero de Sistemas"
+              score={score}
+              img="https://pbs.twimg.com/profile_images/1066477945076752384/6cgqAOkb_400x400.jpg"
+            />
+          </Grid>
+          <Grid item 
+            xs={12}
+          >
+            <ScoreForm 
+              onSocreChangue={handleScore}
+            />
+          </Grid>
         </Grid>
-        <Grid item 
-          xs={12}
-        >
-          <ScoreForm 
-            onSocreChangue={handleScore}
-          />
-        </Grid>
-      </Grid>
-    </Container>
+      </Container>
+    </div>
   );
 }
 
