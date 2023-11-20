@@ -1,9 +1,9 @@
 import './App.css';
 import { Container, Grid} from '@mui/material';
-import { TitleComponent } from '../../components/titulo';
+import { TitleComponent } from './components/titulo';
 import React, { useState } from "react";
-import { PersonDataComponent } from '../../components/datos_persona';
-import { ScoreForm } from '../../components/formulario_puntaje';
+import { PersonDataComponent } from './components/datos_persona';
+import { ScoreForm } from './components/formulario_puntaje';
 
 function App() {
 
