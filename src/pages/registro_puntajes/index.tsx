@@ -2,6 +2,8 @@ import { Container, Grid} from '@mui/material';
 import { TitleComponent } from '../../components/titulo';
 import React from "react";
 import { PersonDataComponent } from '../../components/datos_persona';
+import { ScoreForm } from '../../components/formulario_puntaje';
+
 
 export const ResgisterScorePage: React.FC<{}> = () =>{
   return (
@@ -43,7 +45,7 @@ export const ResgisterScorePage: React.FC<{}> = () =>{
         <Grid item 
           xs={12}
         >
-          Hola
+          <ScoreForm />
         </Grid>
       </Grid>
     </Container>
